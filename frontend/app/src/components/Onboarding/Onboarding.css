@@ -1,0 +1,60 @@
+.loginCard {
+    height: 75vh;
+    background-color: white;
+    width: 38%;
+    border-radius: 50px;
+    color: black;
+}
+
+h1 {
+    margin-top: 62px;
+    font-size: xx-large;
+}
+.loginContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-items-container {
+    margin-top: 100px;
+}
+
+input[type=text], input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    height: 54px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #EBF3F5;
+  }
+  
+.email-input, .password-input, .name-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: large;
+    margin-left: 15%;
+    margin-right: -10%;
+    margin-top: 20px;
+ }
+
+.onboarding-btn {
+    margin-top: 20px;
+}
+
+.sign-up-option {
+    font-size: large;
+    margin-top: 100px;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: #6A71F3;
+    font-weight: 600;
+}

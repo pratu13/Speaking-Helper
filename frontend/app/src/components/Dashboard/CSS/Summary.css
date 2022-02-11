@@ -1,0 +1,430 @@
+/* Filler Words card */
+
+.filler-info-container {
+    width: 185px;
+    height: 180px;
+    background-color: #F9F8FC;
+    border-radius: 27px;
+}
+
+.filler-text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.filler-percent-text-container {
+    display: flex;
+    font-size: larger;
+    margin: 5px;
+}
+
+.text-green {
+    color:#31D871
+}
+
+.text-red {
+   color: #FB6660
+}
+
+.filler-percent-text {  
+    font-size: 55px;
+}
+
+.filler-percent {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: smaller;
+}
+
+.filler-text-message {
+    font-size: 27px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.filler-word-color {
+    color: #FB6660;
+}
+
+/* Pace Card */
+
+.pace-container {
+    width: 275px;
+    height: 180px;
+    background-color: #F9F8FC;
+    border-radius: 27px;
+    margin-left: 10px;
+}
+
+.pace-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.pace-info-child-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pace-info-child-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.pace-info-image {
+    vertical-align: bottom;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.pace-info-transform {
+    transform: scaleX(-1);
+}
+
+.pace-info-text {
+    font-size: 55px;
+}
+
+.pace-info-subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: smaller;
+}
+
+.pace-info-message {
+    font-size: large;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+
+/* Pronounciation Card */
+
+.pronounciation-card-container {
+    /* height: 280px; */
+    background-color: #F9F8FC;
+    border-radius: 27px;
+    margin-bottom: 10px;
+    transition:300ms linear;
+    max-width: fit-content;
+}
+
+.pronounciation-card-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.card-header-image {
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+.pronounciation-card-item-container {
+    margin: 12px;
+}
+
+.pronounciation-card-header-text {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+.pronounciation-button-container {
+    display: inline-block;
+    background-color: #CDA6EB;
+    opacity: 0.72;
+    height: 46.12px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: fit-content;
+}
+
+.pronounciation-button-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pronounciation-button-text{
+   color: white;
+   font-size: 20px;
+   margin-left: 10px;
+   margin-top: 8px;
+   margin-right: 10px;
+}
+
+.pronounciation-button-img {
+    vertical-align: auto;
+    width: 27px;
+    height: 27px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* summary page */
+
+.summary-container-child {
+    display:flex;
+    margin: 100px;
+    justify-content: space-between;
+}
+
+.summary-container-child-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.summary-container-child-pace-filler-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Grammar feedback */
+
+.grammar-feed-container {
+    background-color: #F9F8FC;
+    border-radius: 27px;
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.grammar-feed-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.grammar-feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.grammar-feed-header-text {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.grammar-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grammar-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 10px 10px 1px rgba(255, 119, 174, 0.19);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.incorrect-grammar {
+    color: #FB6660;
+    font-size: 21px;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+
+.correct-grammar {
+    background-color: #74E59F;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.summary-page-bg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0px 0px 100px;
+}
+
+.summary-page-header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.summary-page-header-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    margin-left: 30px;
+}
+
+.summary-page-header-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.summary-page-header-subtitle {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.back-button-img {
+    vertical-align: auto;
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+}
+
+.summary-page-header-overall-score {
+    width: 200px;
+    height: 70px;
+    background: rgba(249, 248, 252, 0.72);
+    border-radius: 8px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-page-header-overall-score-left {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    margin: 10px;
+}
+
+.summary-page-header-overall-score-right {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.summary-page-header-overall-score-right-score-green {
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: bolder;
+    color: #74E59F;
+}
+
+.summary-page-header-overall-score-right-score-red {
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: bolder;
+    color:#FB6660;
+}
+
+.summary-page-header-overall-score-right-overall {
+    font-size: 17px;
+    line-height: 18px;
+    color: black;
+    margin-right: 10px;
+}
+
+/* Sentiment Card */
+
+.sentiment-card-container {
+    /* height: 280px; */
+    background-color: #F9F8FC;
+    border-radius: 27px;
+    margin-top: 10px;
+    height: 180px;
+    padding: 20px;
+    transition:300ms linear;
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    align-items: center;
+    
+}
+
+.summary-reaction-img {
+    vertical-align: auto;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.summary-text {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+    opacity: 0.5;
+}
+
+
+
+/* media query */
+
+@media only screen and (max-width: 1000px) {
+
+    .summary-page-bg-header {
+        display: none;
+    }
+
+
+    .summary-container-child-pace-filler-row {
+        flex-direction: column;
+    }
+
+    .pace-container {
+       width: 180px;
+       margin-top: 10px;
+    }
+
+    .pace-info-subtext {
+        display: none;
+    }
+
+    .summary-container-child {
+        flex-direction: column;
+    }
+
+    .grammar-feed-container {
+        margin-top: 10px;
+    }
+
+    
+    .pronounciation-card-header-text {
+        font-size: 10px;
+    }
+
+    .summary-text {
+        scale: 0.7;
+        margin: 20px;
+    }
+
+    .summary-reaction-img {
+        scale:0.5;
+        padding: 0px;
+    }
+
+
+}

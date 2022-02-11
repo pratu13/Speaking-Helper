@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>team2-project</groupId>
+  <artifactId>SpeakingHelper</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpeakingHelper</name>
+  <description>Application to assist with public speaking</description>
+  
+  <!--Makes the project child of Spring framework  -->
+ <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.5.6</version>
+ </parent>
+ 
+ <!--Repo referenced for Speech to Text API  -->
+ <repositories>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+ </repositories>
+ 
+ 
+ 
+ <dependencies>
+	    <!--Dependencies for SpringBoot  -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter</artifactId>
+    	</dependency>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+            <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+		
+		<!--Dependencies for Speech to Text API  -->
+		<dependency>
+	    	<groupId>edu.cmu.sphinx</groupId>
+		    <artifactId>sphinx4-core</artifactId>
+		    <version>5prealpha-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+		    <groupId>edu.cmu.sphinx</groupId>
+		    <artifactId>sphinx4-data</artifactId>
+		    <version>5prealpha-SNAPSHOT</version>
+		</dependency>
+		
+		<!-- Dependency for TextRazor analysis API -->
+		<dependency>
+			<groupId>com.textrazor</groupId>
+		  	<artifactId>textrazor</artifactId>
+		  	<version>1.0.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>net.sf.jazzy</groupId>
+		    <artifactId>jazzy</artifactId>
+		    <version>0.5.2-rtext-1.4.1-2</version>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+   			<groupId>mysql</groupId>
+   			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20210307</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+		<dependency>
+		   <groupId>javax.persistence</groupId>
+		   <artifactId>persistence-api</artifactId>
+		   <version>1.0.2</version>
+		   <scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>		
+		
+	</dependencies>
+  
+  <properties>
+		<spring.version>3.2.3.RELEASE</spring.version>
+		
+   		<java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+        
+        <junit.jupiter.version>5.5.2</junit.jupiter.version>
+        <junit.platform.version>1.5.2</junit.platform.version>
+  </properties>
+	
+  <build>
+        <plugins>
+        	<!--  Plugin for springboot maven -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            
+            <!--  Plugin for maven compiler -->
+            <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+        	</plugin>
+        	
+        	<plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+        </plugins>
+        
+   </build>
+</project>
