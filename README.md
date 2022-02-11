@@ -1,4 +1,4 @@
-# team2-project
+# PROJECT : https://speechhelper.herokuapp.com
 Running the project on localhost:
 1. Setting up the python environment in laptop :
 
